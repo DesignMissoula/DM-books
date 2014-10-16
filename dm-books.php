@@ -8,6 +8,9 @@
  * Author: Name Of The Plugin Author
  * Author URI: http://URI_Of_The_Plugin_Author
  * License: A "Slug" license name e.g. GPL2
+ * Version: 1.09.2
+ * GitHub Plugin URI: https://github.com/DesignMissoula/DM-donate-plus
+ * GitHub Branch: master
  */
  
      add_action( 'init', 'register_cpt_book' );
@@ -40,6 +43,7 @@
     'query_var' => true,
     'can_export' => true,
     'rewrite' => true,
+    'menu_icon' => 'dashicons-book',
     'capability_type' => 'post'
     );
     register_post_type( 'book', $args );
