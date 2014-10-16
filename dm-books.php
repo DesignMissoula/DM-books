@@ -10,4 +10,37 @@
  * License: A "Slug" license name e.g. GPL2
  */
  
- 
+     add_action( 'init', 'register_cpt_book' );
+    function register_cpt_book() {
+    $labels = array(
+    'name' => _x( 'Books', 'book' ),
+    'singular_name' => _x( 'book', 'book' ),
+    'add_new' => _x( 'Add New', 'book' ),
+    'add_new_item' => _x( 'Add New book', 'book' ),
+    'edit_item' => _x( 'Edit book', 'book' ),
+    'new_item' => _x( 'New book', 'book' ),
+    'view_item' => _x( 'View book', 'book' ),
+    'search_items' => _x( 'Search Books', 'book' ),
+    'not_found' => _x( 'No books found', 'book' ),
+    'not_found_in_trash' => _x( 'No books found in Trash', 'book' ),
+    'parent_item_colon' => _x( 'Parent book:', 'book' ),
+    'menu_name' => _x( 'Books', 'book' ),
+    );
+    $args = array(
+    'labels' => $labels,
+    'hierarchical' => true,
+    'supports' => array( 'title', 'editor' ),
+    'public' => true,
+    'show_ui' => true,
+    'show_in_menu' => true,
+    'show_in_nav_menus' => true,
+    'publicly_queryable' => true,
+    'exclude_from_search' => false,
+    'has_archive' => true,
+    'query_var' => true,
+    'can_export' => true,
+    'rewrite' => true,
+    'capability_type' => 'post'
+    );
+    register_post_type( 'book', $args );
+    } 
