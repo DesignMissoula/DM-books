@@ -15,7 +15,7 @@
      add_action( 'init', 'register_cpt_book' );
     function register_cpt_book() {
     $labels = array(
-    'name' => _x( 'CookBooks', 'book' ),
+    'name' => _x( 'German CookBooks', 'book' ),
     'singular_name' => _x( 'book', 'book' ),
     'add_new' => _x( 'Add New', 'book' ),
     'add_new_item' => _x( 'Add New book', 'book' ),
