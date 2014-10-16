@@ -9,7 +9,7 @@
  * Author URI: http://URI_Of_The_Plugin_Author
  * License: A "Slug" license name e.g. GPL2
  * Version: 1.09.2
- * GitHub Plugin URI: https://github.com/DesignMissoula/DM-donate-plus
+ * GitHub Plugin URI: https://github.com/DesignMissoula/DM-books
  * GitHub Branch: master
  */
  
