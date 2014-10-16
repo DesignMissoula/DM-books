@@ -9,13 +9,13 @@
  * License: A "Slug" license name e.g. GPL2
  * Version: 1.09.5
  * GitHub Plugin URI: https://github.com/DesignMissoula/DM-books
- * GitHub Branch: master
+ * GitHub Branch: german-cookbooks
  */
  
      add_action( 'init', 'register_cpt_book' );
     function register_cpt_book() {
     $labels = array(
-    'name' => _x( 'CookBooks', 'book' ),
+    'name' => _x( 'German CookBooks', 'book' ),
     'singular_name' => _x( 'book', 'book' ),
     'add_new' => _x( 'Add New', 'book' ),
     'add_new_item' => _x( 'Add New book', 'book' ),
